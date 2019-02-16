@@ -27,13 +27,12 @@ extract_features <- function(df, group_var, value_var, features='all', custom_fe
   
   if(!data_confirm){
     #' request acknowledgement from user if they did not pass in the parameter
-    readline(prompt="By running this script, you are acknowledging your data is in long format. Press enter to continue: ")
+    print("By running this script, you are acknowledging your data is in long format.")
   } else {
     
     #' check if custom feature list provided
     if(features == "custom") {
       if(is.na(custom_feature_list)){
-        #' throw error if specified custom, but didnt pass in custom features
         stop("ERROR: If 'features' is set to 'custom', you must supply a vector of functions from within the package")
       } else {
         #' if custom features provided, save into common namespace

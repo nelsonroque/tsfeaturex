@@ -1,4 +1,4 @@
-# R package: featuRe
+# R package: tsfeatuReX
 calculate many features (over 50) of a time series.
 
 ## Special Thanks

@@ -1,3 +1,4 @@
+# Simple Features
 min
 mean
 median
@@ -8,7 +9,11 @@ sd
 variance
 coeff.variation
 range
+
+# Binary Features
 sd.greater.range
+
+# Distribution Features
 kurtosis
 skew
 quantile_10
