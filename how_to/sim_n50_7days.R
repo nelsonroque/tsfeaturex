@@ -1,11 +1,5 @@
-# remove old versions of package (you always want the fresh one!)
-remove.packages('featuRe') 
-
-# install latest from github
-devtools::install_github("nelsonroque/featuRe")
-
 # load library
-library(featuRe)
+library(tsfeaturex)
 
 # for reproducibility
 set.seed(420) # iterate seeds through 600

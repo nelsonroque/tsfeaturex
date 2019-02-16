@@ -19,14 +19,14 @@ Development supported by National Institute on Aging Grant T32 AG049676 to The P
 # Installation:
 
 ```
-devtools::install_github("nelsonroque/featuRe")
+devtools::install_github("nelsonroque/tsfeaturex")
 ```
 
 # Usage:
 
 ```r
 # load library
-library(featuRe)
+library(tsfeaturex)
 
 # for reproducibility of this example
 set.seed(516)

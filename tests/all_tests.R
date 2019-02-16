@@ -1,7 +1,7 @@
-#install_github('featuRe','nelsonroque')
+#devtools::install_github('tsfeaturex','nelsonroque')
 
 # simulate loading of package
-library(featuRe)
+library(tsfeaturex)
 
 # for reproducibility
 set.seed(516)
@@ -25,7 +25,7 @@ for(test in all.args) {
   print("---------------------------------")
   
   # run function
-  out.list <- extract_features(df,group_var,value_var,test)
+  out.list <- extract_features(df,group_var,value_var,test, return_timing = F)
   
   # convert list to data.frame (MapReduce)
   final.df <- features_to_df(out.list)
