@@ -1,4 +1,4 @@
-#devtools::install_github('tsfeaturex','nelsonroque')
+devtools::install_github('tsfeaturex','nelsonroque')
 
 # simulate loading of package
 library(tsfeaturex)

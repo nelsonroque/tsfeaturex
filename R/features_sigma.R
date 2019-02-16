@@ -5,7 +5,6 @@
 #' @param x class: vector, data from dplyr %>%
 #' @export
 f.which.below.1sigma <- function(x) {
-  
   sd1 <- 1 * sd(x,na.rm=T)
   m <- mean(x,na.rm=T)
   threshold = m - sd1
@@ -16,7 +15,6 @@ f.which.below.1sigma <- function(x) {
 #' @param x class: vector, data from dplyr %>%
 #' @export
 f.which.above.1sigma <- function(x) {
-  
   sd1 <- 1 * sd(x,na.rm=T)
   m <- mean(x,na.rm=T)
   threshold = m + sd1
@@ -27,7 +25,6 @@ f.which.above.1sigma <- function(x) {
 #' @param x class: vector, data from dplyr %>%
 #' @export
 f.which.below.2sigma <- function(x) {
-  
   sd2 <- 2 * sd(x,na.rm=T)
   m <- mean(x,na.rm=T)
   threshold = m - sd2
@@ -38,7 +35,6 @@ f.which.below.2sigma <- function(x) {
 #' @param x class: vector, data from dplyr %>%
 #' @export
 f.which.above.2sigma <- function(x) {
-  
   sd2 <- 2 * sd(x,na.rm=T)
   m <- mean(x,na.rm=T)
   threshold = m + sd2

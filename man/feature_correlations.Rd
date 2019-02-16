@@ -4,13 +4,15 @@
 \alias{feature_correlations}
 \title{A Time-Series Feature Extraction Package}
 \usage{
-feature_correlations(df, data.format = "wide", group_var, plot = T,
-  view = F, r_threshold = 0.5)
+feature_correlations(df, id_var, data.format = "wide", view = F,
+  r_threshold = 0.5)
 }
 \arguments{
 \item{df}{class: data.frame}
 
-\item{plot}{class: boolean; whether or not to plot feature correlations as heatmap}
+\item{id_var}{class: string; variable indicating identifier (no need to correlate that, right?)}
+
+\item{data.format}{class: string; whether data is in 'wide' or 'long' format ('long' returns error)}
 
 \item{view}{class: boolean; whether or not to show data.frame of highly correlated variables above preset threshold (default = 0.5)}
 
