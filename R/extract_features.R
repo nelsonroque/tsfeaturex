@@ -43,113 +43,109 @@ extract_features <- function(df, group_var, value_var, features='all', custom_fe
       current.features <- generate_extraction_list(features)
     }
       
-    if(!is.na(current.features)) {
-      #' 
-      
-      #' create list to store feature data
-      feature_list = list()
-      
-      #' create dataframe to return feature timing data
-      feature_timing_df = data.frame()
-      
-      #' 
-      
-      #' start timer
-      SESSION_START_TIME <- Sys.time()
-      SESSION_START_TIMESTAMP = format(SESSION_START_TIME, "%m_%d_%Y-%H_%M_%S")
-      
-      #' 
-      
-      #' process all features
-      for(feature_ in current.features) {
+    #' 
     
-        #' 
-        
-        #' start feature timer
-        PROCESS_START_TIME = Sys.time()
-        PROCESS_START_TIMESTAMP = format(PROCESS_START_TIME, "%m/%d/%Y %H:%M:%S")
-        
-        #' 
-        
-        #' extract function name, assuming first argument
-        func_name <- feature_[1]
-        
-        #' 
-        
-        #' construct function call
-        if(length(feature_) > 1) {
-          func_var_str <- paste(func_name,func_args,sep='_')
-          func_args <- feature_[2:length(feature_)]
-          method_constructor <- paste(func_name,'(',value_var,',',paste(func_args,sep=','),')')
-        } else {
-          func_args <- ''
-          func_var_str <- paste(func_name,sep='_')
-          method_constructor <- paste(func_name,'(',value_var,')')
-        }
-        
-        #' 
-        
-        #' construct feature method (add in support for NAs)
-        new_method <- method_constructor
-        
-        #' 
-        
-        #' create variable name
-        new_var_name <- paste0(func_var_str,'_', value_var)
-        
-        #' 
-        
-        #' start feature extraction timer
-        FEATURE_START_TIME = Sys.time()
-        FEATURE_START_TIMESTAMP = format(FEATURE_START_TIME, "%m/%d/%Y %H:%M:%S")
-        
-        #' 
-        
-        #' run one feature calculation
-        df_output <- df %>%
-          group_by_(.dots = group_var) %>%
-          summarise_(.dots = setNames(new_method, new_var_name))
-        
-        #' 
-        
-        #' save each feature as list object
-        feature_list[[feature_]] <- df_output
-        
-        #' 
-        
-        #' end feature timer
-        PROCESS_END_TIME = Sys.time()
+    #' create list to store feature data
+    feature_list = list()
+    
+    #' create dataframe to return feature timing data
+    feature_timing_df = data.frame()
+    
+    #' 
+    
+    #' start timer
+    SESSION_START_TIME <- Sys.time()
+    SESSION_START_TIMESTAMP = format(SESSION_START_TIME, "%m_%d_%Y-%H_%M_%S")
+    
+    #' 
+    
+    #' process all features
+    for(feature_ in current.features) {
+  
+      #' 
+      
+      #' start feature timer
+      PROCESS_START_TIME = Sys.time()
+      PROCESS_START_TIMESTAMP = format(PROCESS_START_TIME, "%m/%d/%Y %H:%M:%S")
+      
+      #' 
+      
+      #' extract function name, assuming first argument
+      func_name <- feature_[1]
+      
+      #' 
+      
+      #' construct function call
+      if(length(feature_) > 1) {
+        func_var_str <- paste(func_name,func_args,sep='_')
+        func_args <- feature_[2:length(feature_)]
+        method_constructor <- paste(func_name,'(',value_var,',',paste(func_args,sep=','),')')
+      } else {
+        func_args <- ''
+        func_var_str <- paste(func_name,sep='_')
+        method_constructor <- paste(func_name,'(',value_var,')')
+      }
+      
+      #' 
+      
+      #' construct feature method (add in support for NAs)
+      new_method <- method_constructor
+      
+      #' 
+      
+      #' create variable name
+      new_var_name <- paste0(func_var_str,'_', value_var)
+      
+      #' 
+      
+      #' start feature extraction timer
+      FEATURE_START_TIME = Sys.time()
+      FEATURE_START_TIMESTAMP = format(FEATURE_START_TIME, "%m/%d/%Y %H:%M:%S")
+      
+      #' 
+      
+      #' run one feature calculation
+      df_output <- df %>%
+        group_by_(.dots = group_var) %>%
+        summarise_(.dots = setNames(new_method, new_var_name))
+      
+      #' 
+      
+      #' save each feature as list object
+      feature_list[[feature_]] <- df_output
+      
+      #' 
+      
+      #' end feature timer
+      PROCESS_END_TIME = Sys.time()
 
-        #' 
-        
-        #' calculate elapsed time
-        feature_elapsed_time = difftime(PROCESS_END_TIME,FEATURE_START_TIME,units='secs')
-        process_elapsed_time = difftime(PROCESS_END_TIME,PROCESS_START_TIME,units='secs')
-        
-        #' 
-        
-        #' create export dataset with timing features
-        feature_export_df <- data.frame(feature = func_name,
-                                        session_start_timestamp = SESSION_START_TIME,
-                                        process_start_timestamp = PROCESS_START_TIMESTAMP,
-                                        feature_start_timestamp = FEATURE_START_TIMESTAMP,
-                                        process_start_timer = as.numeric(PROCESS_START_TIME)*1000,
-                                        feature_start_timer = as.numeric(FEATURE_START_TIME)*1000,
-                                        process_end_timer = as.numeric(PROCESS_END_TIME)*1000)
-        
-        #' 
-        
-        #' bind to full dataset of timing details
-        feature_timing_df <- rbind(feature_timing_df,feature_export_df)
-        
-        #' 
-        
-        #' print function name
-        if(verbose) {
-          print(paste0("(v.",VERSION_CODE,") ","EXTRACTING: ", func_name," | Elapsed time (secs):",feature_elapsed_time))
-        }
-        
-        #' 
+      #' 
+      
+      #' calculate elapsed time
+      feature_elapsed_time = difftime(PROCESS_END_TIME,FEATURE_START_TIME,units='secs')
+      process_elapsed_time = difftime(PROCESS_END_TIME,PROCESS_START_TIME,units='secs')
+      
+      #' 
+      
+      #' create export dataset with timing features
+      feature_export_df <- data.frame(feature = func_name,
+                                      session_start_timestamp = SESSION_START_TIME,
+                                      process_start_timestamp = PROCESS_START_TIMESTAMP,
+                                      feature_start_timestamp = FEATURE_START_TIMESTAMP,
+                                      process_start_timer = as.numeric(PROCESS_START_TIME)*1000,
+                                      feature_start_timer = as.numeric(FEATURE_START_TIME)*1000,
+                                      process_end_timer = as.numeric(PROCESS_END_TIME)*1000)
+      
+      #' 
+      
+      #' bind to full dataset of timing details
+      feature_timing_df <- rbind(feature_timing_df,feature_export_df)
+      
+      #' 
+      
+      #' print function name
+      if(verbose) {
+        print(paste0("(v.",VERSION_CODE,") ","EXTRACTING: ", func_name," | Elapsed time (secs):",feature_elapsed_time))
       }
     }
     
