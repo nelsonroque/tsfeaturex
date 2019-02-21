@@ -1,5 +1,9 @@
 # R package: tsfeaturex
-calculate many features (over 50) of a time series.
+
+[![DOI](https://zenodo.org/badge/170967121.svg)](https://zenodo.org/badge/latestdoi/170967121)
+
+## Description
+Calculate many features (over 50) of a time series.
 
 ## Special Thanks
 - Inspiration for automatic feature extraction: https://github.com/blue-yonder/tsfresh
