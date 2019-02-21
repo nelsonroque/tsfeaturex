@@ -206,7 +206,7 @@ $(document).ready(function () {
 <h1>Summary</h1>
 <div id="functionality" class="section level2">
 <h2>Functionality</h2>
-<p><code>tsfeaturex</code> is an R package for time series feature extraction that is inspired and modeled after the Python package <em>tsfresh</em> <span class="citation">(Christ et al. 2018; blue-yonder 2016b)</span>. The R language allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of R’s Shiny). The API for <code>tsfeaturex</code> is a wrapper for the highly-trafficked ‘dplyr’, mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for <code>tsfeaturex</code> was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst).</p>
+<p><code>tsfeaturex</code> <span class="citation">(Roque 2019)</span> is an R package for time series feature extraction that is inspired and modeled after the Python package <em>tsfresh</em> <span class="citation">(Christ et al. 2018; blue-yonder 2016b)</span>. The R language allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of R’s Shiny). The API for <code>tsfeaturex</code> is a wrapper for the highly-trafficked ‘dplyr’, mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for <code>tsfeaturex</code> was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst).</p>
 <p>For convenience, the package can export extracted features in long format or wide format (i.e., wide format may be of interest when attempting to correlate same feature across several variables of interest). By design, <code>tsfeaturex</code> is able to cope with missing data (in R, of class <code>NA</code>), a key deviation from tsfresh <span class="citation">(blue-yonder 2016a)</span>. In addition to feature extraction, this package also calculates feature correlations amongst outputted features.</p>
 </div>
 <div id="purpose-audience" class="section level2">
@@ -224,19 +224,19 @@ $(document).ready(function () {
 <ul>
 <li>Intraindividual Study of Affect, Health, and Interpersonal Behavior (iSAHIB)
 <ul>
-<li><a href="https://quantdev.ssri.psu.edu/projects/isahib-intraindividual-study-affect-health-and-interpersonal-behavior" class="uri">https://quantdev.ssri.psu.edu/projects/isahib-intraindividual-study-affect-health-and-interpersonal-behavior</a></li>
+<li><a href="https://quantdev.ssri.psu.edu/projects/isahib-intraindividual-study-affect-health-and-interpersonal-behavior">Learn More About This Project</a></li>
 </ul></li>
 <li>Midlife in the United States (MIDUS), National Study of Daily Experiences
 <ul>
-<li><a href="http://midus.wisc.edu/midus2/project2" class="uri">http://midus.wisc.edu/midus2/project2</a></li>
+<li><a href="http://midus.wisc.edu/midus2/project2">Learn More About This Project</a></li>
 </ul></li>
 <li>Einstein Aging Study (EAS)
 <ul>
-<li><a href="https://sliwinskilab.weebly.com/research-projects.html" class="uri">https://sliwinskilab.weebly.com/research-projects.html</a></li>
+<li><a href="https://sliwinskilab.weebly.com/research-projects.html">Learn More About This Project</a></li>
 </ul></li>
 <li>Effects of Stress on Cognitive Aging, Physiology, and Emotion (ESCAPE)
 <ul>
-<li><a href="https://sliwinskilab.weebly.com/research-projects.html" class="uri">https://sliwinskilab.weebly.com/research-projects.html</a></li>
+<li><a href="https://sliwinskilab.weebly.com/research-projects.html">Learn More About This Project</a></li>
 </ul></li>
 </ul>
 </div>
@@ -267,6 +267,9 @@ $(document).ready(function () {
 </div>
 <div id="ref-Jahng2008">
 <p>Jahng, Seungmin, Phillip K. Wood, and Timothy J. Trull. 2008. “Analysis of affective instability in ecological momentary assessment: Indices using successive difference and group comparison via multilevel modeling.” <em>Psychological Methods</em> 13 (4): 354–75. doi:<a href="https://doi.org/10.1037/a0014173">10.1037/a0014173</a>.</p>
+</div>
+<div id="ref-roque_ram_2019">
+<p>Roque, Nelson. 2019. “Tsfeaturex.” Zenodo. doi:<a href="https://doi.org/10.5281/zenodo.2574990">10.5281/zenodo.2574990</a>.</p>
 </div>
 <div id="ref-findpeaks">
 <p>stas-g. 2017. “FindPeaks.” <em>GitHub Repository</em>. <a href="https://github.com/stas-g/findPeaks" class="uri">https://github.com/stas-g/findPeaks</a>; GitHub.</p>

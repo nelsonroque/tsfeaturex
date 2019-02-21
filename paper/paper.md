@@ -41,7 +41,7 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 # Summary
 
 ## Functionality
-`tsfeaturex` is an R package for time series feature extraction that is inspired and modeled after the Python package *tsfresh* [@tsfresh; @tsfreshgit].  The R language allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of R's Shiny).  The API for `tsfeaturex` is a wrapper for the highly-trafficked 'dplyr', mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for `tsfeaturex` was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst). 
+`tsfeaturex` [@roque_ram_2019] is an R package for time series feature extraction that is inspired and modeled after the Python package *tsfresh* [@tsfresh; @tsfreshgit].  The R language allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of R's Shiny).  The API for `tsfeaturex` is a wrapper for the highly-trafficked 'dplyr', mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for `tsfeaturex` was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst). 
 
 For convenience, the package can export extracted features in long format or wide format (i.e., wide format may be of interest when attempting to correlate same feature across several variables of interest).  By design, `tsfeaturex` is able to cope with missing data (in R, of class `NA`), a key deviation from tsfresh [@tsfreshgitissue].  In addition to feature extraction, this package also calculates feature correlations amongst outputted features.
 
@@ -55,13 +55,13 @@ The current expectation is that over time, `tsfeaturex`, will allow for two-leve
 `tsfeaturex` is currently being used in analysis of experience sampling and multi-trial performance data in a variety of projects at the interface of data science and psychological science, including:
 
   * Intraindividual Study of Affect, Health, and Interpersonal Behavior (iSAHIB)
-    * https://quantdev.ssri.psu.edu/projects/isahib-intraindividual-study-affect-health-and-interpersonal-behavior
+    * [Learn More About This Project](https://quantdev.ssri.psu.edu/projects/isahib-intraindividual-study-affect-health-and-interpersonal-behavior)
   * Midlife in the United States (MIDUS), National Study of Daily Experiences
-    * http://midus.wisc.edu/midus2/project2
+    * [Learn More About This Project](http://midus.wisc.edu/midus2/project2)
   * Einstein Aging Study (EAS)
-    * https://sliwinskilab.weebly.com/research-projects.html
+    * [Learn More About This Project](https://sliwinskilab.weebly.com/research-projects.html)
   * Effects of Stress on Cognitive Aging, Physiology, and Emotion (ESCAPE)
-    * https://sliwinskilab.weebly.com/research-projects.html
+    * [Learn More About This Project](https://sliwinskilab.weebly.com/research-projects.html)
 
 # Figures
 Figure depicts sample time series data from two participants, both with mean value of 5. You will notice, although they have identical means, the shape of the time series, and locations of peaks is different. `tsfeaturex` calculates features to better characterize differences such as these. ![The mean doesn't tell the whole story](figure.png)
