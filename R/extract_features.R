@@ -21,7 +21,7 @@ extract_features <- function(df, group_var, value_var, features='all', custom_fe
   #' 
   
   #' storing for multiple downstream purposes
-  VERSION_CODE = packageVersion("featuRe")
+  VERSION_CODE = utils::packageVersion("tsfeaturex")
   
   #' 
   
