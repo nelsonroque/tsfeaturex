@@ -12,7 +12,7 @@
 
 #' @export
 features_to_df <- function(df.list, group_var, data.format = "long", verbose=F) {
-  VERSION_CODE = packageVersion("featuRe")
+  VERSION_CODE = utils::packageVersion("tsfeaturex")
   
   # check list to make sure it is mergeable
   if(length(df.list) > 1){
