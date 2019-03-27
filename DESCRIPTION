@@ -1,5 +1,5 @@
 Package: tsfeaturex
-Version: 0.3.6
+Version: 0.3.7
 Date: 2019-02-16
 Title: Calculates Numerous Features For Any Time Series
 Authors@R: person("Nelson", "Roque", email = "nelsonroquejr@gmail.com", role = c("aut", "cre"))
