@@ -12,7 +12,7 @@
 
 #' @export
 features_to_df <- function(df.list, group_var, data.format = "long", verbose=F) {
-  VERSION_CODE = packageVersion("featuRe")
+  VERSION_CODE = packageVersion("tsfeaturex")
   
   # check list to make sure it is mergeable
   if(length(df.list) > 1){
@@ -24,28 +24,38 @@ features_to_df <- function(df.list, group_var, data.format = "long", verbose=F) 
     # depending on desired output format,
     # translate the dataset as necessary
     if(data.format == "long"){
-      export.df <- feature.df
+      
+      if(length(group_var) == 1) {
+        export.df <- gather(feature.df, feature, value, c(2:ncol(feature.df)))
+      } else {
+        export.df <- feature.df
+      }
     } else {
       if(data.format == "wide") {
         
-        # melt the data frame
-        final.melt <- reshape2::melt(feature.df,id.vars=group_var)
-        
-        # name column with calculated features
-        names(final.melt)[3] <- "feature"
-        
-        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        
-        # write dcast formula depending 
-        # on number of arguments in group_var
-        dcast.formula.lhs <- group_var[1] # assuming first index is ID column
-        dcast.formula.rhs <- group_var[2:length(group_var)]
-        dcast.formula.full <- paste0(dcast.formula.lhs, " ~ ", "feature +", paste0(dcast.formula.rhs,collapse="+"))
-        
-        # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        
-        # go from long to wide
-        export.df <- dcast(final.melt, dcast.formula.full)
+        if(length(group_var) == 1) {
+          export.df <- feature.df
+        } else {
+          
+          # melt the data frame
+          final.melt <- reshape2::melt(feature.df,id.vars=group_var)
+          
+          # name column with calculated features
+          names(final.melt)[3] <- "feature"
+          
+          # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+          
+          # write dcast formula depending 
+          # on number of arguments in group_var
+          dcast.formula.lhs <- group_var[1] # assuming first index is ID column
+          dcast.formula.rhs <- group_var[2:length(group_var)]
+          dcast.formula.full <- paste0(dcast.formula.lhs, " ~ ", "feature +", paste0(dcast.formula.rhs,collapse="+"))
+          
+          # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+          
+          # go from long to wide
+          export.df <- dcast(final.melt, dcast.formula.full)
+        }
         
         # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
         
