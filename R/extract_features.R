@@ -17,13 +17,10 @@
 #' @importFrom Langevin Langevin1D
 #' @importFrom psych mssd
 #' @export
+#' 
 extract_features <- function(df, group_var, value_var, features='all', custom_feature_list = NA, data_confirm=T, return_timing=T, verbose=T) {
-  #' 
-  
   #' storing for multiple downstream purposes
   VERSION_CODE = packageVersion("tsfeaturex")
-  
-  #' 
   
   if(!data_confirm){
     #' request acknowledgement from user if they did not pass in the parameter
