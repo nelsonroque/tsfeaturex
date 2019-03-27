@@ -4,10 +4,15 @@
 \alias{feature_corr_heatmap}
 \title{A Time-Series Feature Extraction Package}
 \usage{
-feature_corr_heatmap(cor.df, out.path)
+feature_corr_heatmap(cor.df, out.path = NA, palette = "viridis",
+  theme = "minimal")
 }
 \arguments{
 \item{out.path}{class: string; where to save correlation heatmap}
+
+\item{palette}{class: string; options: "viridis", "temperature"}
+
+\item{theme}{class: string; options: "minimal", "blank"}
 
 \item{df}{class: data.frame}
 }
