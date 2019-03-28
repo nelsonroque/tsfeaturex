@@ -8,17 +8,17 @@
 #' @param data_confirm class: boolean; T = confirming data is in long format
 #' @param return_timing class: boolean; T = return dataframe with timing for each feature
 #' @param verbose class: boolean; T = display status, debugging info
+#' @export
 #' @examples
 #' extract_features(df,group_var='id',value_var='y',features='simple')
 #' extract_features(df,group_var=c('id','month'),'y',features='all')
 #' @import entropy
 #' @import zoo
+#' @importFrom psych mssd
 #' @importFrom e1071 kurtosis skewness
 #' @importFrom Langevin Langevin1D
-#' @importFrom psych mssd
 
-#' @export
-extract_features <- function(df, group_var, value_var, features='all', custom_feature_list = NA, data_confirm=T, return_timing=T, verbose=T) {
+extract_features <- function(df, group_var, value_var, features='all', custom_feature_list=NA, data_confirm=T, return_timing=T, verbose=T){
   VERSION_CODE = packageVersion("tsfeaturex")   #' storing for multiple downstream purposes
   
   if(!data_confirm){
