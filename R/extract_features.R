@@ -11,16 +11,15 @@
 #' @examples
 #' extract_features(df,group_var='id',value_var='y',features='simple')
 #' extract_features(df,group_var=c('id','month'),'y',features='all')
-#' @importFrom e1071 kurtosis skewness
+#' @export 
 #' @import entropy
 #' @import zoo
+#' @importFrom e1071 kurtosis skewness
 #' @importFrom Langevin Langevin1D
 #' @importFrom psych mssd
-#' @export 
 
 extract_features <- function(df, group_var, value_var, features='all', custom_feature_list = NA, data_confirm=T, return_timing=T, verbose=T) {
-  #' storing for multiple downstream purposes
-  VERSION_CODE = packageVersion("tsfeaturex")
+  VERSION_CODE = packageVersion("tsfeaturex")   #' storing for multiple downstream purposes
   
   if(!data_confirm){
     #' request acknowledgement from user if they did not pass in the parameter
