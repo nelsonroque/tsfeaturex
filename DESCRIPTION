@@ -1,10 +1,10 @@
 Package: tsfeaturex
-Version: 0.3.7
-Date: 2019-02-16
+Version: 0.3.8
+Date: 2019-03-28
 Title: Calculates Numerous Features For Any Time Series
 Authors@R: person("Nelson", "Roque", email = "nelsonroquejr@gmail.com", role = c("aut", "cre"))
 Description: Inspired by tsfresh, this package calculate numerous features on any time series. Grouping variables can be passed in as a vector of strings, refering the column name to group by (for example, bin number, id number, treatment condition). As of version 0.3.6, long format data is expected. Future releases will include function arguments for data shape, and include convenience functions for wrangling the data into shape.
-Imports: e1071, entropy, Langevin, Hmisc, forecast, stats, zoo, psych, viridis
+Imports: e1071, entropy, Langevin, Hmisc, forecast, stats, zoo, viridis, psych
 Depends: R (>= 3.4.0), tidyverse
 License: MIT
 URL: https://github.com/nelsonroque/featuRe
