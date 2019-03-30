@@ -7,6 +7,7 @@
 #' @param theme class: string; options: "minimal", "blank"
 #' @keywords time series, intra-individual variability
 #' @import tidyverse
+#' @import viridis
 #' @examples
 #' feature_corr_heatmap(df, out.path)
 
