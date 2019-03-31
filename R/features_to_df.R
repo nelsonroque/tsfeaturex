@@ -26,7 +26,7 @@ features_to_df <- function(df.list, group_var, data.format = "long", verbose=F) 
     if(data.format == "long"){
       
       if(length(group_var) == 1) {
-        export.df <- tidyverse::gather(feature.df, feature, value, c(2:ncol(feature.df)))
+        export.df <- tidyr::gather(feature.df, feature, value, c(2:ncol(feature.df)))
       } else {
         export.df <- feature.df
       }

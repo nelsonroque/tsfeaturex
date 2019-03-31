@@ -24,11 +24,13 @@ extract_features <- function(df, group_var, value_var, features='all', custom_fe
   
   if(!data_confirm){
     #' request acknowledgement from user if they did not pass in the parameter
+    
     print("By running this script, you are acknowledging:")
     print("-- your data is in long format")
     print("-- you are aware of the precision of your input/output variables (be mindful of significant digits)")
     print("-- you are aware missing data is filtered (considere imputation approaches prior to feature extraction")
     print("-- if you use this package, you will cite it: https://zenodo.org/badge/latestdoi/170967121")
+  
   } else {
     
     #' check if custom feature list provided
