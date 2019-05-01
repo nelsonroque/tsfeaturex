@@ -44,10 +44,10 @@ dat$y[1:3] <- NA # introduce NAs to check
 out.list <- extract_features(df=dat,group_var="id",value_var="y",features="all")
 
 # convert list to data.frame (MapReduce)
-final.df <- features_to_df(out.list, data.format="wide")
+final.df <- features_to_df(out.list, data.format="wide", group_var = "id")
 
 # get feature correlations
-cor.df <- feature_correlations(final.df, data.format="wide")
+cor.df <- feature_correlations(final.df, data.format="wide", id_var = "id")
 
 # view results
 View(final.df)
