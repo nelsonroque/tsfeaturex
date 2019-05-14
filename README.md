@@ -5,6 +5,14 @@
 ## Description
 Calculate many features (over 50) of a time series.
 
+## Dependencies 
+
+- tidyverse (citation)
+
+## Imports
+
+- e1071, entropy, Langevin, Hmisc, forecast, stats, zoo, viridis, psych
+
 ## Special Thanks
 - Inspiration for automatic feature extraction: https://github.com/blue-yonder/tsfresh
 - Dr. Nilam Ram for code on probability of acute change
@@ -43,6 +51,9 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 ```
 devtools::install_github("nelsonroque/tsfeaturex")
 ```
+
+# Need help?
+File an issue here on Github: (https://github.com/nelsonroque/tsfeaturex/issues) or reach out directly (nelsonroquejr@gmail.com)
 
 # Usage:
 
