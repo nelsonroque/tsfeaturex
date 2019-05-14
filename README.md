@@ -16,8 +16,9 @@ Development supported by National Institute on Aging Grant T32 AG049676 to The P
 
 ## Roadmap
 
-- More features (Fast Fourier Transform (FFT), Time-Series Components (Seasonality, trend, random), Friedrich coefficients (Q1 2019)
+- Push to CRAN (June 2019)
 - Extracting numerical features from text data (Q2 2019)
+- More features (Fast Fourier Transform (FFT), Time-Series Components (Seasonality, trend, random), Friedrich coefficients (Q3 2019)
 - Extracting numerical features from image data (Q4 2019)
 
 # Statement of Need
@@ -32,6 +33,10 @@ In today's digital world, data collection and storage costs are quite low. Human
 
 Short data streams are easily summarized using basic features (e.g., mean, standard deviation, IQR). However, as the time-series get longer, numerous other features may be needed and/or can be accessed. Study of intraindividual variability has outlined the wide variety of time-series features that can be used to characterize between-person differences and within-person change - with features such as probability of acute change (PAC) or mean square of successive differences (MSSD) providing useful information about individuals' cognitive, emotional, and behavioral dynamics (for more info on intraindividual variability metrics, see: [@Jahng2008]).
 
+## References
+
+[@ibmstats]
+[@Jahng2008]
 
 # Installation:
 
