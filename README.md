@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/170967121.svg)](https://zenodo.org/badge/latestdoi/170967121)
 
 ## Description
-Calculate many features (over 50) of a time series.
+Calculate many features (over 50) of a time series. [Click here to view the full feature list](feature_list.md)
 
 ## Dependencies 
 
