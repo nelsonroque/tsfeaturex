@@ -61,10 +61,10 @@ devtools::install_github("nelsonroque/tsfeaturex")
 ```
 
 # Report a bug
-File an issue here on Github: (https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or reach out directly (nelsonroquejr@gmail.com)
+[Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
 
 # Request a New Feature
-Request a new feature on Github: (https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or reach out directly (nelsonroquejr@gmail.com)
+[Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
 
 # Usage:
 
