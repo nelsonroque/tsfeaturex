@@ -21,16 +21,17 @@ Calculate many features (over 50) of a time series.
 - viridis (citation)
 - psych (citation)
 
+# Acknowledgements
+
 ## Special Thanks
 - Inspiration for automatic feature extraction: https://github.com/blue-yonder/tsfresh
 - Dr. Nilam Ram for code on probability of acute change
 - Github user 'stas-g' for peak-finding code: https://github.com/stas-g/findPeaks
 
-## Acknowledgements
+## Funding
+- Nelson Roque was supported by National Institute on Aging Grant T32 AG049676 to The Pennsylvania State University. 
 
-Development supported by National Institute on Aging Grant T32 AG049676 to The Pennsylvania State University. 
-
-## Roadmap
+# Roadmap
 
 - Push to CRAN (June 2019)
 - Extracting numerical features from text data (Q2 2019)
@@ -54,13 +55,15 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 [@ibmstats]
 [@Jahng2008]
 
-# Installation:
+# Using `tsfeaturex`
+
+## Installation:
 
 ```
 devtools::install_github("nelsonroque/tsfeaturex")
 ```
 
-# Usage:
+## Usage:
 
 ```r
 # load library
@@ -87,8 +90,8 @@ cor.df <- feature_correlations(final.df, data.format="wide", id_var = "id")
 View(final.df)
 ```
 
-# Report a bug
+## Report a bug
 [Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
 
-# Request a New Feature
+## Request a New Feature
 [Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
