@@ -11,7 +11,15 @@ Calculate many features (over 50) of a time series.
 
 ## Imports
 
-- e1071, entropy, Langevin, Hmisc, forecast, stats, zoo, viridis, psych
+- e1071 (citation)
+- entropy (citation)
+- Langevin (citation)
+- Hmisc (citation)
+- forecast (citation)
+- stats (citation)
+- zoo (citation)
+- viridis (citation)
+- psych (citation)
 
 ## Special Thanks
 - Inspiration for automatic feature extraction: https://github.com/blue-yonder/tsfresh
