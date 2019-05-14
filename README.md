@@ -60,8 +60,11 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 devtools::install_github("nelsonroque/tsfeaturex")
 ```
 
-# Need help?
-File an issue here on Github: (https://github.com/nelsonroque/tsfeaturex/issues) or reach out directly (nelsonroquejr@gmail.com)
+# Report a bug
+File an issue here on Github: (https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or reach out directly (nelsonroquejr@gmail.com)
+
+# Request a New Feature
+Request a new feature on Github: (https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or reach out directly (nelsonroquejr@gmail.com)
 
 # Usage:
 
