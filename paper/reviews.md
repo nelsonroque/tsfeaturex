@@ -13,6 +13,8 @@
 
 # Testing
 
+http://r-pkgs.had.co.nz/tests.html
+
 n = 10
 days = 21
 
