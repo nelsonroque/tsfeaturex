@@ -57,6 +57,10 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 
 # Using `tsfeaturex`
 
+## Changelog
+
+[Click here to view the change log](changelog.md)
+
 ## Installation:
 
 ```
