@@ -60,12 +60,6 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 devtools::install_github("nelsonroque/tsfeaturex")
 ```
 
-# Report a bug
-[Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
-
-# Request a New Feature
-[Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
-
 # Usage:
 
 ```r
@@ -91,3 +85,10 @@ cor.df <- feature_correlations(final.df, data.format="wide", id_var = "id")
 
 # view results
 View(final.df)
+```
+
+# Report a bug
+[Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
+
+# Request a New Feature
+[Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
