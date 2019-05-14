@@ -9,3 +9,14 @@
 - I can’t find a statement of need, although there is a very good one in the paper.
 - you’ve got two issue formats but I wonder what you think about whether the reporting of issues could be highlighted in the readme? Also, where does a user go for help?
 - You don’t seem to have used any automated testing (please do correct me if I’m wrong)? How do the users know if the code if working as intended?
+
+
+# Testing
+
+n = 10
+days = 21
+
+test number of rows returned 
+test number of NA values in raw data against returned value
+test long to wide conversion
+test feature correlations matrix
