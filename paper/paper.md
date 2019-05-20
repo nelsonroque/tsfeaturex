@@ -11,6 +11,7 @@ date: "18 February 2019"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 bibliography: paper.bib
 tags:
 - R
@@ -41,11 +42,9 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 # Summary
 
 ## Functionality
-`tsfeaturex` [@roque_ram_2019] is an R package for automating time series feature extraction, inspired and modeled after the Python package *tsfresh* [@tsfresh; @tsfreshgit].  The R language allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of R's Shiny).  The API for `tsfeaturex` is a wrapper for the highly-trafficked 'dplyr', mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for `tsfeaturex` was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst). 
+`tsfeaturex` [@roque_ram_2019] is an R package for automating time series feature extraction, inspired and modeled after the Python package *tsfresh* [@tsfresh; @tsfreshgit].  The R language [@r_cite] allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of the `shiny` package in R; [@r_shiny]).  The API for `tsfeaturex` is a wrapper for the highly-trafficked 'dplyr', mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for `tsfeaturex` was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst).
 
-For convenience, the package can export extracted features in long format or wide format (i.e., wide format may be of interest when attempting to correlate same feature across several variables of interest).  By design, `tsfeaturex` is able to cope with missing data (in R, of class `NA`), a key deviation from tsfresh [@tsfreshgitissue].  In addition to feature extraction, this package also calculates feature correlations amongst outputted features.
-
-### Data Structures
+By design, `tsfeaturex` is able to cope with missing data (in R, of class `NA`), a key deviation from tsfresh [@tsfreshgitissue].  In addition to feature extraction, this package also calculates feature correlations amongst outputted features.
 
 `tsfeaturex` is capable of outputting both `long` and `wide` data structures -- both of use for different purposes (e.g., `long` format preferred for plotting in ggplot2) and analyses (e.g., `wide` format preferred for repeated measures ANOVA in most statistical software).  Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column. ![Flexible data structure output -- request `long` or `wide` format](datashape.PNG)
 
