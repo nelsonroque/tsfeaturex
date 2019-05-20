@@ -95,7 +95,7 @@ View(final.df)
 ```
 
 ## Report a bug
-[Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
+[Click here to file an issue on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=bug_report.md&title=) or [feel free to reach out directly](mailto:nelsonroquejr@gmail.com)
 
 ## Request a New Feature
-[Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](nelsonroquejr@gmail.com)
+[Click here to request a new feature on Github](https://github.com/nelsonroque/tsfeaturex/issues/new?assignees=&labels=&template=feature_request.md&title=) or [feel free to reach out directly](mailto:nelsonroquejr@gmail.com)
