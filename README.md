@@ -7,19 +7,18 @@ Calculate many features (over 50) of a time series. [Click here to view the full
 
 ## Dependencies 
 
-- tidyverse (citation)
+- tidyverse (https://www.tidyverse.org/)
 
 ## Imports
-
-- e1071 (citation)
-- entropy (citation)
-- Langevin (citation)
-- Hmisc (citation)
-- forecast (citation)
-- stats (citation)
-- zoo (citation)
-- viridis (citation)
-- psych (citation)
+- stats (https://www.R-project.org/)
+- psych (https://CRAN.R-project.org/package=psych)
+- e1071 (https://CRAN.R-project.org/package=e1071)
+- entropy (https://CRAN.R-project.org/package=entropy)
+- Langevin (https://CRAN.R-project.org/package=Langevin)
+- Hmisc (https://CRAN.R-project.org/package=Hmisc)
+- forecast (https://CRAN.R-project.org/package=forecast)
+- zoo (https://CRAN.R-project.org/package=zoo)
+- viridis (https://CRAN.R-project.org/package=viridis)
 
 # Acknowledgements
 
