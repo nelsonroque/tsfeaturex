@@ -10,7 +10,7 @@
 
 
 
-<meta name="date" content="2019-02-18" />
+<meta name="date" content="2019-05-20" />
 
 <title>tsfeaturex: An R Package for Automating Time Series Feature Extraction</title>
 
@@ -192,14 +192,14 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">tsfeaturex: An R Package for Automating Time Series Feature Extraction</h1>
-<h4 class="date">18 February 2019</h4>
+<h4 class="date">20 May 2019</h4>
 
 </div>
 
 
 <div id="statement-of-need" class="section level1">
 <h1>Statement of Need</h1>
-<p>In today’s digital world, data collection and storage costs are quite low. Humans are collectively outputting 2.5 quintillion bytes of data every day; by 2020, each person will generate ~ 1.7 MB every second <span class="citation">(IBM Marketing Cloud 2017)</span>. At this scale, intensive longitudinal data about humans’ behavior facilitates new discovery about the patterning of thought and action and potentially better prediction and optimization of health and well-being. In raw, form the 2.5 quintillion bytes of raw data generated daily are difficult to interpret – noisy time-series. Extraction of features from the time-series, however, allows:</p>
+<p>In today’s digital world, data collection and storage costs are quite low. Humans are collectively outputting 2.5 quintillion bytes of data every day; by 2020, each person will generate ~ 1.7 MB every second <span class="citation">(Cloud 2017)</span>. At this scale, intensive longitudinal data about humans’ behavior facilitates new discovery about the patterning of thought and action and potentially better prediction and optimization of health and well-being. In raw, form the 2.5 quintillion bytes of raw data generated daily are difficult to interpret – noisy time-series. Extraction of features from the time-series, however, allows:</p>
 <ol style="list-style-type: decimal">
 <li><p>Researchers to reduce the dimensionality of their time-series data (e.g., reducing millions of time-stamped observations to, for example, summary feature vector of length 100);</p></li>
 <li><p>Summary characterizations of time-series data that may be used as predictors, correlates, or outcomes in study of between-person differences; and</p></li>
@@ -211,7 +211,7 @@ $(document).ready(function () {
 <h1>Summary</h1>
 <div id="functionality" class="section level2">
 <h2>Functionality</h2>
-<p><code>tsfeaturex</code> <span class="citation">(Roque 2019)</span> is an R package for automating time series feature extraction, inspired and modeled after the Python package <em>tsfresh</em> <span class="citation">(Christ et al. 2018; blue-yonder 2016b)</span>. The R language <span class="citation">(R Core Team 2019)</span> allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of the <code>shiny</code> package in R; <span class="citation">(Chang et al. 2019)</span>). The API for <code>tsfeaturex</code> is a wrapper for the highly-trafficked ‘dplyr’, mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for <code>tsfeaturex</code> was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst). Some features are integrated from other packages, such as: <span class="citation">(<code>e1071</code>, Meyer et al. 2019; <code>Hmisc</code>, Harrell Jr, Charles Dupont, and others. 2019; <code>forecast</code>, Hyndman and Khandakar 2008; <code>zoo</code>, Zeileis and Grothendieck 2005; <code>viridis</code>, Garnier 2018; <code>psych</code>, Revelle 2018; <code>entropy</code>, Hausser and Strimmer 2014; <code>Langevin</code>, Friedrich et al. 2011; Rinn et al. 2016)</span>.</p>
+<p><code>tsfeaturex</code> <span class="citation">(Roque 2019)</span> is an R package for automating time series feature extraction, inspired and modeled after the Python package <em>tsfresh</em> <span class="citation">(Christ et al. 2018; blue-yonder 2016b)</span>. The R language <span class="citation">(R Core Team 2019)</span> allows for an easy to use interface, with the underlying processing speed advantage of C languages (and flexibility to run on the web, with the help of the <code>shiny</code> package in R; <span class="citation">(Chang et al. 2019)</span>). The API for <code>tsfeaturex</code> is a wrapper for the highly-trafficked <code>dplyr</code><span class="citation">(Wickham et al. 2019)</span>, mainly to lend on the flexibility of the grammar of data manipulation and shortcuts for non-standard evaluation. The API for <code>tsfeaturex</code> was designed to facilitate the extraction of features for any dataset in long format, including grouping of summaries by other factor. For example, if every person in your dataset has 1 observation each day for 8 days, and they do this in two bursts, once every 6 months, you can calculate features of the overall series, 16 observations from both bursts, or separately for each burst). Some features are integrated from other packages, such as: <span class="citation">(<code>e1071</code>, Meyer et al. 2019; <code>Hmisc</code>, Harrell Jr, Charles Dupont, and others. 2019; <code>forecast</code>, Hyndman and Khandakar 2008; <code>zoo</code>, Zeileis and Grothendieck 2005; <code>viridis</code>, Garnier 2018; <code>psych</code>, Revelle 2018; <code>entropy</code>, Hausser and Strimmer 2014; <code>Langevin</code>, Friedrich et al. 2011; Rinn et al. 2016)</span>.</p>
 <p>By design, <code>tsfeaturex</code> is able to cope with missing data (in R, of class <code>NA</code>), a key deviation from tsfresh <span class="citation">(blue-yonder 2016a)</span>. In addition to feature extraction, this package also calculates feature correlations amongst outputted features.</p>
 <p><code>tsfeaturex</code> is capable of outputting both <code>long</code> and <code>wide</code> data structures – both of use for different purposes (e.g., <code>long</code> format preferred for plotting in ggplot2) and analyses (e.g., <code>wide</code> format preferred for repeated measures ANOVA in most statistical software).</p>
 </div>
@@ -272,6 +272,9 @@ $(document).ready(function () {
 <div id="ref-tsfresh">
 <p>Christ, Maximilian, Nils Braun, Julius Neuffer, and Andreas W. Kempa-Liehr. 2018. “Time Series Feature Extraction on Basis of Scalable Hypothesis Tests (Tsfresh: A Python Package).” <em>Neurocomputing</em> 307: 72–77. doi:<a href="https://doi.org/https://doi.org/10.1016/j.neucom.2018.03.067">https://doi.org/10.1016/j.neucom.2018.03.067</a>.</p>
 </div>
+<div id="ref-ibmstats">
+<p>Cloud, IBM Marketing. 2017. “10 Key Marketing Trends for 2017 and Ideas for Exceeding Customer Expectations.” IBM. <a href="https://www.ibm.com/downloads/cas/XKBEABLN" class="uri">https://www.ibm.com/downloads/cas/XKBEABLN</a>.</p>
+</div>
 <div id="ref-Friedrich2011">
 <p>Friedrich, Rudolf, Joachim Peinke, Muhammad Sahimi, and Mohammed Reza Rahimi Tabar. 2011. “Approaching Complexity by Stochastic Methods: From Biological Systems to Turbulence.” <em>Physics Reports</em> 506 (5). Elsevier BV: 87–162. doi:<a href="https://doi.org/10.1016/j.physrep.2011.05.003">10.1016/j.physrep.2011.05.003</a>.</p>
 </div>
@@ -287,9 +290,6 @@ $(document).ready(function () {
 <div id="ref-r_forecast">
 <p>Hyndman, Rob J, and Yeasmin Khandakar. 2008. “Automatic Time Series Forecasting: The Forecast Package for R.” <em>Journal of Statistical Software</em> 26 (3): 1–22. <a href="http://www.jstatsoft.org/article/view/v027i03" class="uri">http://www.jstatsoft.org/article/view/v027i03</a>.</p>
 </div>
-<div id="ref-ibmstats">
-<p>IBM Marketing Cloud. 2017. “10 Key Marketing Trends for 2017 and Ideas for Exceeding Customer Expectations.” IBM. <a href="https://www.ibm.com/downloads/cas/XKBEABLN" class="uri">https://www.ibm.com/downloads/cas/XKBEABLN</a>.</p>
-</div>
 <div id="ref-Jahng2008">
 <p>Jahng, Seungmin, Phillip K. Wood, and Timothy J. Trull. 2008. “Analysis of affective instability in ecological momentary assessment: Indices using successive difference and group comparison via multilevel modeling.” <em>Psychological Methods</em> 13 (4): 354–75. doi:<a href="https://doi.org/10.1037/a0014173">10.1037/a0014173</a>.</p>
 </div>
@@ -303,13 +303,16 @@ $(document).ready(function () {
 <p>Revelle, William. 2018. <em>Psych: Procedures for Psychological, Psychometric, and Personality Research</em>. Evanston, Illinois: Northwestern University. <a href="https://CRAN.R-project.org/package=psych" class="uri">https://CRAN.R-project.org/package=psych</a>.</p>
 </div>
 <div id="ref-Rinn2016">
-<p>Rinn, Philip, Pedro G. Lind, Matthias Wächter, and Joachim Peinke. 2016. “The Langevin Approach: An R Package for Modeling Markov Processes.” <em>Journal of Open Research Software</em> 4 (1). Ubiquity Press: e34. doi:<a href="https://doi.org/10.5334/jors.123">10.5334/jors.123</a>.</p>
+<p>Rinn, Philip, Pedro G. Lind, Matthias WÃ¤chter, and Joachim Peinke. 2016. “The Langevin Approach: An R Package for Modeling Markov Processes.” <em>Journal of Open Research Software</em> 4 (1). Ubiquity Press: e34. doi:<a href="https://doi.org/10.5334/jors.123">10.5334/jors.123</a>.</p>
 </div>
 <div id="ref-roque_ram_2019">
 <p>Roque, Nelson. 2019. “Tsfeaturex.” Zenodo. doi:<a href="https://doi.org/10.5281/zenodo.2574990">10.5281/zenodo.2574990</a>.</p>
 </div>
 <div id="ref-findpeaks">
 <p>stas-g. 2017. “FindPeaks.” <em>GitHub Repository</em>. <a href="https://github.com/stas-g/findPeaks" class="uri">https://github.com/stas-g/findPeaks</a>; GitHub.</p>
+</div>
+<div id="ref-r_dplyr">
+<p>Wickham, Hadley, Romain François, Lionel Henry, and Kirill Müller. 2019. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a>.</p>
 </div>
 <div id="ref-r_zoo">
 <p>Zeileis, Achim, and Gabor Grothendieck. 2005. “Zoo: S3 Infrastructure for Regular and Irregular Time Series.” <em>Journal of Statistical Software</em> 14 (6): 1–27. doi:<a href="https://doi.org/10.18637/jss.v014.i06">10.18637/jss.v014.i06</a>.</p>
