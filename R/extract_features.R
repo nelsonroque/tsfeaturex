@@ -126,7 +126,9 @@ extract_features <- function(df, group_var, value_var, features='all', custom_fe
         
     #' print run time
     ELAPSED_TIME = difftime(Sys.time(),SESSION_START_TIME,units='secs')
-    print(paste0("(v.",VERSION_CODE,")"," EXTRACTING: total run time | Elapsed time (secs): ",ELAPSED_TIME))
+    if(verbose) {
+      print(paste0("(v.",VERSION_CODE,")"," EXTRACTING: total run time | Elapsed time (secs): ",ELAPSED_TIME))
+    }
         
     #' view timings by feature if desired
     if(return_timing) {
