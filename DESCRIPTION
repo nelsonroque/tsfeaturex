@@ -1,6 +1,6 @@
 Package: tsfeaturex
-Version: 0.3.9
-Date: 2019-03-28
+Version: 0.3.10
+Date: 2019-05-20
 Title: Calculates Numerous Features For Any Time Series
 Authors@R: person("Nelson", "Roque", email = "nelsonroquejr@gmail.com", role = c("aut", "cre"))
 Description: Inspired by tsfresh, this package calculate numerous features on any time series. Grouping variables can be passed in as a vector of strings, refering the column name to group by (for example, bin number, id number, treatment condition). As of version 0.3.6, long format data is expected. Future releases will include function arguments for data shape, and include convenience functions for wrangling the data into shape.
