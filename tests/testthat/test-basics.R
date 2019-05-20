@@ -5,7 +5,7 @@
 set.seed(516)
 
 # create test data
-dat <- data.frame(expand.grid(day=c(1:14),id=c(1:1)))
+dat <- data.frame(expand.grid(day=c(1:14),id=c(1:2)))
 dat$y <- rnorm(nrow(dat),5,1.5)
 dat$y[1:3] <- NA # introduce NAs to check
 
@@ -47,4 +47,8 @@ test_that("all autocorrelation features are calculated", {
 
 test_that("all probability of acute change features are calculated", {
   expect_equal(pac, 11)
+})
+
+test_that("feature correlations were calculated", {
+  expect_equal(names(cor.df), c("var1","var2","value"))
 })
