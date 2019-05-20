@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/170967121.svg)](https://zenodo.org/badge/latestdoi/170967121)
 
 ## Description
-Calculate many features (over 50) of a time series. [Click here to view the full feature list](feature_list.md)
+Calculate many features (over 50) of a time series. [Click here to view the full feature list](docs/feature_list.md)
 
 ## Dependencies 
 
@@ -47,18 +47,13 @@ In today's digital world, data collection and storage costs are quite low. Human
 
 3. Improved and detailed description of human behavior streams (e.g., characterizing a behavioral time series in terms of its features; the mean is 'X', the range is 'Y', the peaks are at 'T12' and 'T30').
 
-Short data streams are easily summarized using basic features (e.g., mean, standard deviation, IQR). However, as the time-series get longer, numerous other features may be needed and/or can be accessed. Study of intraindividual variability has outlined the wide variety of time-series features that can be used to characterize between-person differences and within-person change - with features such as probability of acute change (PAC) or mean square of successive differences (MSSD) providing useful information about individuals' cognitive, emotional, and behavioral dynamics (for more info on intraindividual variability metrics, see: [@Jahng2008]).
-
-## References
-
-[@ibmstats]
-[@Jahng2008]
+Short data streams are easily summarized using basic features (e.g., mean, standard deviation, IQR). However, as the time-series get longer, numerous other features may be needed and/or can be accessed. Study of intraindividual variability has outlined the wide variety of time-series features that can be used to characterize between-person differences and within-person change - with features such as probability of acute change (PAC) or mean square of successive differences (MSSD) providing useful information about individuals' cognitive, emotional, and behavioral dynamics.
 
 # Using `tsfeaturex`
 
 ## Changelog
 
-[Click here to view the change log](changelog.md)
+[Click here to view the change log](docs/changelog.md)
 
 ## Installation:
 
