@@ -14,6 +14,7 @@ out.list <- extract_features(df=dat, group_var="id", value_var="y", features="al
 
 # convert list to data.frame (MapReduce)
 final.df <- features_to_df(out.list, data.format="wide", group_var = "id")
+final.ldf <- features_to_df(out.list, data.format="long", group_var = "id")
 
 # get feature correlations
 cor.df <- feature_correlations(final.df, data.format="wide", id_var = "id")
@@ -28,6 +29,14 @@ quantiles <- final.df %>% select(contains("quantile")) %>% ncol(.)
 pac <- final.df %>% select(contains("prob.acute")) %>% ncol(.)
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+test_that("list type to wide-format data.frame conversion worked", {
+  expect_equal(nrow(final.df), 2)
+})
+
+test_that("list type to long-format data.frame conversion worked", {
+  expect_equal(nrow(final.ldf), 164)
+})
 
 test_that("correct missing data count returned", {
   expect_equal(final.df$f.count_NA_y[1], 3)
