@@ -47,7 +47,7 @@ For convenience, the package can export extracted features in long format or wid
 
 ### Data Structures
 
-`tsfeaturex` is capable of outputting both `long` and `wide` data structures -- both of use for different purposes (e.g., `long` format preferred for plotting in ggplot2) and analyses (e.g., `wide` format preferred for repeated measures ANOVA in most statistical software).  Figure 1 depicts example `long` and `wide` data structures. ![Flexible data structure output -- request `long` or `wide` format](datashape.PNG)
+`tsfeaturex` is capable of outputting both `long` and `wide` data structures -- both of use for different purposes (e.g., `long` format preferred for plotting in ggplot2) and analyses (e.g., `wide` format preferred for repeated measures ANOVA in most statistical software).  Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column. ![Flexible data structure output -- request `long` or `wide` format](datashape.PNG)
 
 ## Purpose & Audience
 `tsfeaturex` is intended for use by researchers with time-series data, and will be of most interest to those developing their statistical and coding skills -- allowing them to extract many features from their time-series data with easy to use code and without need for high-level mathematics background.  The desire for feature extraction tools is widespread across all domains of data science, including, but not limited to, applications in: biological systems, finance, and psychology.
