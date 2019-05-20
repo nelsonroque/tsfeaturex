@@ -46,7 +46,7 @@ Short data streams are easily summarized using basic features (e.g., mean, stand
 
 By design, `tsfeaturex` is able to cope with missing data (in R, of class `NA`), a key deviation from tsfresh [@tsfreshgitissue].  In addition to feature extraction, this package also calculates feature correlations amongst outputted features.
 
-`tsfeaturex` is capable of outputting both `long` and `wide` data structures -- both of use for different purposes (e.g., `long` format preferred for plotting in ggplot2) and analyses (e.g., `wide` format preferred for repeated measures ANOVA in most statistical software).  Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column. ![Flexible data structure output -- request `long` or `wide` format](datashape.PNG)
+`tsfeaturex` is capable of outputting both `long` and `wide` data structures -- both of use for different purposes (e.g., `long` format preferred for plotting in ggplot2) and analyses (e.g., `wide` format preferred for repeated measures ANOVA in most statistical software).
 
 ## Purpose & Audience
 `tsfeaturex` is intended for use by researchers with time-series data, and will be of most interest to those developing their statistical and coding skills -- allowing them to extract many features from their time-series data with easy to use code and without need for high-level mathematics background.  The desire for feature extraction tools is widespread across all domains of data science, including, but not limited to, applications in: biological systems, finance, and psychology.
@@ -67,7 +67,9 @@ The current expectation is that over time, `tsfeaturex`, will allow for two-leve
     * [Learn More About This Project](https://sliwinskilab.weebly.com/research-projects.html)
 
 # Figures
-Figure 2 depicts sample time series data from two participants, both with mean value of 5. You will notice, although they have identical means, the shape of the time series, and locations of peaks is different. `tsfeaturex` calculates features to better characterize differences such as these. ![The mean doesn't tell the whole story](figure.png)
+Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column. ![Figure 1. Flexible data structure output -- request `long` or `wide` format](datashape.PNG)
+
+Figure 2 depicts sample time series data from two participants, both with mean value of 5. You will notice, although they have identical means, the shape of the time series, and locations of peaks is different. `tsfeaturex` calculates features to better characterize differences such as these. ![Figure 2. The mean doesn't tell the whole story](figure.png)
 
 # Acknowledgements
 Nelson A. Roque was supported by National Institute on Aging Grant T32 AG049676 to The Pennsylvania State University.
