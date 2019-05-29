@@ -67,10 +67,12 @@ The current expectation is that over time, `tsfeaturex`, will allow for two-leve
     * [Learn More About This Project](https://sliwinskilab.weebly.com/research-projects.html)
 
 # Figures
-Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column. 
+Figure 1 depicts example `wide`(top) and `long`(bottom) data structures for a dataset containing two (2) measurements from two (2) individuals.  Notice that there is one row for each individual in the `wide` format, and two (2) rows for each individual in the `long` format, one for each column.
+
 ![Figure 1. Flexible data structure output -- request `long` or `wide` format](datashape.PNG "Figure 1. Flexible data structure output -- request `long` or `wide` format")
 
-Figure 2 depicts sample time series data from two participants, both with mean value of 5. You will notice, although they have identical means, the shape of the time series, and locations of peaks is different. `tsfeaturex` calculates features to better characterize differences such as these. 
+Figure 2 depicts sample time series data from two participants, both with mean value of 5. You will notice, although they have identical means, the shape of the time series, and locations of peaks is different. `tsfeaturex` calculates features to better characterize differences such as these.
+ 
 ![Figure 2. The mean doesn't tell the whole story](figure.png "Figure 2. The mean does not fully describe the time-series.")
 
 # Acknowledgements
