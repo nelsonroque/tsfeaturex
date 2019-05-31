@@ -2,6 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/170967121.svg)](https://zenodo.org/badge/latestdoi/170967121)
 [![status](http://joss.theoj.org/papers/aa9198d80b72aecc2418ad94f4e7ab1a/status.svg)](http://joss.theoj.org/papers/aa9198d80b72aecc2418ad94f4e7ab1a)
+[![DOI](http://joss.theoj.org/papers/10.21105/joss.01279/status.svg)](https://doi.org/10.21105/joss.01279)
 
 ## Description
 Calculate many features (over 50) of a time series. [Click here to view the full feature list](docs/feature_list.md)
