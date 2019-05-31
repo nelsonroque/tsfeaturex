@@ -22,9 +22,9 @@ tags:
 affiliations:
 - index: 1
   name: T32 Postdoctoral Fellow, Pennsylvania State University, Center for Healthy
-    Aging
+    Aging, University Park, PA, USA
 - index: 2
-  name: Professor, Pennsylvania State University, Human Development & Family Studies
+  name: Professor, Pennsylvania State University, Human Development & Family Studies, University Park, PA, USA
 ---
 
 # Statement of Need
