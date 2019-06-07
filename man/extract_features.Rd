@@ -2,7 +2,7 @@
 % Please edit documentation in R/extract_features.R
 \name{extract_features}
 \alias{extract_features}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 extract_features(df, group_var, value_var, features = "all",
   custom_feature_list = NA, data_confirm = T, return_timing = T,
@@ -26,7 +26,7 @@ extract_features(df, group_var, value_var, features = "all",
 \item{verbose}{class: boolean; T = display status, debugging info}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 extract_features(df,group_var='id',value_var='y',features='simple')

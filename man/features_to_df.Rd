@@ -2,7 +2,7 @@
 % Please edit documentation in R/features_to_df.R
 \name{features_to_df}
 \alias{features_to_df}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 features_to_df(df.list, group_var, data.format = "long", verbose = F)
 }
@@ -16,7 +16,7 @@ features_to_df(df.list, group_var, data.format = "long", verbose = F)
 \item{verbose}{class: boolean; T = display status, debugging info}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 features_to_df(df.list, group_var='id', data.format='long')

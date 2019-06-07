@@ -2,7 +2,7 @@
 % Please edit documentation in R/feature_correlations.R
 \name{feature_correlations}
 \alias{feature_correlations}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 feature_correlations(df, id_var, data.format = "wide", view = F,
   r_threshold = 0.5)
@@ -19,7 +19,7 @@ feature_correlations(df, id_var, data.format = "wide", view = F,
 \item{r_threshold}{class: numeric; correlation threshold to display above}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 feature_correlations(df, view=T, r_threshold=0.75)

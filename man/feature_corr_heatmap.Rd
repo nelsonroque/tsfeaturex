@@ -2,7 +2,7 @@
 % Please edit documentation in R/feature_corr_heatmap.R
 \name{feature_corr_heatmap}
 \alias{feature_corr_heatmap}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 feature_corr_heatmap(cor.df, out.path = NA, palette = "viridis",
   theme = "minimal")
@@ -17,7 +17,7 @@ feature_corr_heatmap(cor.df, out.path = NA, palette = "viridis",
 \item{df}{class: data.frame}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 feature_corr_heatmap(df, out.path)

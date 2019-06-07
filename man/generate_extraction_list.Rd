@@ -2,7 +2,7 @@
 % Please edit documentation in R/generate_extraction_list.R
 \name{generate_extraction_list}
 \alias{generate_extraction_list}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 generate_extraction_list(feature_category)
 }
@@ -10,7 +10,7 @@ generate_extraction_list(feature_category)
 \item{feature_category}{class: string; options: 'all', 'simple', 'count', 'sigma', change', 'meta', 'distribution' , 'location'}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 generate_extraction_list(feature_category="simple")

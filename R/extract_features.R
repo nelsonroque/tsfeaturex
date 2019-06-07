@@ -1,5 +1,6 @@
-#' A Time-Series Feature Extraction Package
-#' 
+#' `tsfeaturex: A Time-Series Feature Extraction Package
+
+#' @name extract_features
 #' @param df class: data.frame
 #' @param group_var class: string, or vector of strings; description: column name(s) to group by
 #' @param value_var class: string; description: column name with value 'y' in data

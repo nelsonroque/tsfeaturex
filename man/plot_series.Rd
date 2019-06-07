@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot_series.R
 \name{plot_series}
 \alias{plot_series}
-\title{A Time-Series Feature Extraction Package}
+\title{`tsfeaturex: A Time-Series Feature Extraction Package}
 \usage{
 plot_series(df, ids = c(1:2), id_var = "id", x = "day", y = "y")
 }
@@ -18,7 +18,7 @@ plot_series(df, ids = c(1:2), id_var = "id", x = "day", y = "y")
 \item{y}{class: string; description: column name with value 'y' in data}
 }
 \description{
-A Time-Series Feature Extraction Package
+`tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
 plot_series(isahib.sim, ids=c(1:3), id_var="id", x="day", y="y")

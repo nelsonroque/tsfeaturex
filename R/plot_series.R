@@ -1,5 +1,6 @@
-#' A Time-Series Feature Extraction Package
-#' 
+#' `tsfeaturex: A Time-Series Feature Extraction Package
+
+#' @name plot_series
 #' @param df class: data.frame
 #' @param ids class: vector of user ids to match
 #' @param id_var class: string; description: column name with value 'y' in data

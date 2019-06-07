@@ -1,4 +1,4 @@
-#' A Time-Series Feature Extraction Package
+#' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name feature_corr_heatmap
 #' @param df class: data.frame

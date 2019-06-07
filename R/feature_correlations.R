@@ -1,4 +1,4 @@
-#' A Time-Series Feature Extraction Package
+#' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name feature_correlations
 #' @param df class: data.frame

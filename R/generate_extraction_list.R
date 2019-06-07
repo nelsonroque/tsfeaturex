@@ -1,5 +1,6 @@
-#' A Time-Series Feature Extraction Package
-#'
+#' `tsfeaturex: A Time-Series Feature Extraction Package
+
+#' @name generate_extraction_list
 #' @param feature_category class: string; options: 'all', 'simple', 'count', 'sigma', change', 'meta', 'distribution' , 'location'
 #' @examples
 #' generate_extraction_list(feature_category="simple")

@@ -1,5 +1,6 @@
-#' A Time-Series Feature Extraction Package
+#' `tsfeaturex: A Time-Series Feature Extraction Package
 
+#' @name features_to_df
 #' @param df.list class: list of dataframes; each dataframe result of different feature calculator
 #' @param group_var class: vector of strings to group data by (ID, variable)
 #' @param data.format class: string; 'wide' or 'long'; currently no support for 'wide'
