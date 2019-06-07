@@ -7,7 +7,7 @@
 f.sd(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 calculate sd of x

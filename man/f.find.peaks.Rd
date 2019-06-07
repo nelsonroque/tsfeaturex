@@ -7,7 +7,7 @@
 f.find.peaks(x, m = 3)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \description{
 `tsfeaturex: A Time-Series Feature Extraction Package

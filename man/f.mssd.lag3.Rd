@@ -7,7 +7,7 @@
 f.mssd.lag3(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 Returns the MSSD, lag3; Von Neuman et al. (1941) discussed the Mean Square of Successive Differences as a measure of variability that takes into account gradual shifts in mean

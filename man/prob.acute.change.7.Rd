@@ -8,7 +8,7 @@
 f.prob.acute.change.7(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 Returns the probability of acute change (threshold = 0.70)

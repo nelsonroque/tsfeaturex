@@ -64,7 +64,7 @@ devtools::install_github("nelsonroque/tsfeaturex")
 
 ## Usage:
 
-```r
+```r{echo=true}
 # load library
 library(tsfeaturex)
 

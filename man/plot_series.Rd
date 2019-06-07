@@ -21,5 +21,5 @@ plot_series(df, ids = c(1:2), id_var = "id", x = "day", y = "y")
 `tsfeaturex: A Time-Series Feature Extraction Package
 }
 \examples{
-plot_series(isahib.sim, ids=c(1:3), id_var="id", x="day", y="y")
+plot_series(df, ids=c(1:3), id_var="id", x="day", y="y")
 }

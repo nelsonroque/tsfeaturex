@@ -7,7 +7,7 @@
 normalize(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 transforms data to 0-1

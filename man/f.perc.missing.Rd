@@ -7,7 +7,7 @@
 f.perc.missing(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 percentage missing data

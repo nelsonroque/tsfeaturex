@@ -7,7 +7,7 @@
 f.coeff.variation(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 ...

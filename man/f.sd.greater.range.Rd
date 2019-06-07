@@ -7,7 +7,7 @@
 f.sd.greater.range(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 if sd is greater than range of data

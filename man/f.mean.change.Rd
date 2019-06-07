@@ -7,7 +7,7 @@
 f.mean.change(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 Returns the mean over the absolute differences between subsequent time series values which is

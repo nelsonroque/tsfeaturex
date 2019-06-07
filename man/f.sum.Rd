@@ -7,7 +7,7 @@
 f.sum(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 calculate sum of x

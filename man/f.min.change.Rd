@@ -7,7 +7,7 @@
 f.min.change(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 Returns the min over the absolute differences between subsequent time series values which is

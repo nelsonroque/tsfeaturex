@@ -7,7 +7,7 @@
 f.perc.unique.values(x)
 }
 \arguments{
-\item{x}{class: vector, data from dplyr %>%}
+\item{x}{class: vector, data from dplyr}
 }
 \value{
 Returns the ratio of unique values, that are present in the time series more than once.
