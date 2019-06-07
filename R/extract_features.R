@@ -21,7 +21,7 @@
 extract_features <- function(df, group_var, value_var, features='all', custom_feature_list=NA, data_confirm=T, return_timing=T, verbose=T){
   VERSION_CODE = packageVersion("tsfeaturex") 
   
-  #' storing for multiple downstream purposes
+  # storing for multiple downstream purposes
   
   if(!data_confirm){
     #' request acknowledgement from user if they did not pass in the parameter
