@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name prob.acute.change.6
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @return Returns the probability of acute change (threshold = 0.60)
 #' @export
 f.prob.acute.change.6 <- function(x) {
