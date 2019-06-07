@@ -2,7 +2,7 @@
 
 #' @name f.sd.greater.range
 #' @return if sd is greater than range of data
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @export
 f.sd.greater.range <- function(x) {
   sd_ <- sd(x,na.rm=T)

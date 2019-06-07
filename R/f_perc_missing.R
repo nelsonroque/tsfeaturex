@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.perc.missing
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @return percentage missing data
 #' @export
 f.perc.missing <- function(x) {

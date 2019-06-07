@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.partial.autocorrelation
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @export
 f.partial.autocorrelation <- function(x,lag) {
   x2 <- x[!is.na(x)]

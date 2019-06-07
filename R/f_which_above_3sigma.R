@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.which.above.3sigma
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @export
 f.which.above.3sigma <- function(x) {
   sd3 <- 3 * sd(x,na.rm=T)

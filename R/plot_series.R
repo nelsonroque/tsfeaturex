@@ -7,7 +7,7 @@
 #' @param x class: string; description: column name with value 'x' in data
 #' @param y class: string; description: column name with value 'y' in data
 #' @examples
-#' plot_series(isahib.sim, ids=c(1:3), id_var="id", x="day", y="y")
+#' plot_series(df, ids=c(1:3), id_var="id", x="day", y="y")
 #' @export 
 
 plot_series <- function(df, ids = c(1:2), id_var = "id", x = "day", y = "y") {

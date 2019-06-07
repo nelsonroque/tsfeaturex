@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.which.below.1sigma
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @export
 f.which.below.1sigma <- function(x) {
   sd1 <- 1 * sd(x,na.rm=T)

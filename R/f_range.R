@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.range
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @return Range of data
 #' @export
 f.range <- function(x) {

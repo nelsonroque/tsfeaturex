@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.which.below.2sigma
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @export
 f.which.below.2sigma <- function(x) {
   sd2 <- 2 * sd(x,na.rm=T)

@@ -1,7 +1,7 @@
 #' `tsfeaturex: A Time-Series Feature Extraction Package
 
 #' @name f.entropy
-#' @param x class: vector, data from dplyr %>%
+#' @param x class: vector, data from dplyr
 #' @return Returns Shannon Entropy
 #' @export
 f.entropy <- function(x) {
