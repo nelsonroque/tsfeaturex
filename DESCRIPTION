@@ -1,12 +1,12 @@
 Package: tsfeaturex
 Version: 0.4.0
 Date: 2019-05-20
-Title: Calculates Numerous Features From Any Time Series
+Title: An R Package for Automating Time Series Feature Extraction
 Authors@R: person("Nelson", "Roque", email = "nelsonroquejr@gmail.com", role = c("aut", "cre"))
-Description: 'Inspired by tsfresh, this package calculate numerous features on any time series. Grouping variables can be passed in as a vector of strings, refering the column name to group by (for example, bin number, id number, treatment condition). As of version 0.3.6, long format data is expected. Future releases will include function arguments for data shape, and include convenience functions for wrangling the data into shape.'
+Description: 'Inspired by tsfresh (github: blue-yonder), this package calculate numerous features on any time series. Grouping variables can be passed in as a vector of strings, refering the column name to group by (for example, bin number, id number, treatment condition). As of version 0.3.6, long format data is expected. Future releases will include function arguments for data shape, and include convenience functions for wrangling the data into shape. For more information, see: https://github.com/nelsonroque/tsfeaturex. Read our manuscript published in the Journal of Open Source Software: http://joss.theoj.org/papers/10.21105/joss.01279'
 Imports: e1071, entropy, Langevin, Hmisc, forecast, stats, zoo, viridis, psych, reshape2
 Depends: R (>= 3.4.0), tidyverse
-License: MIT
+License: GNU General Public License
 URL: https://github.com/nelsonroque/tsfeaturex
 Encoding: UTF-8
 LazyData: true
