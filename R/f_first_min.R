@@ -4,10 +4,15 @@
 #' @param x class: vector, data from dplyr
 #' @export
 f.first.min <- function(x) {
-  x <- x[!is.na(x)]
-  wm <- which.min(x)
-  if(wm == 0) {
+  x2 <- x[!is.na(x)]
+  if(length(x2) == 0){
     wm = NA
+  } else {
+    wm <- which.min(x2)
+    if(wm == 0) {
+      wm = NA
+    }
   }
+  
   return(wm)
 }
