@@ -88,7 +88,7 @@ generate_extraction_list <- function(feature_category) {
                     change.features,
                     meta.features,
                     distribution.features,
-                    #location.features,
+                    location.features,
                     sigma.features,
                     #experimental.features,
                     #fft.features,
