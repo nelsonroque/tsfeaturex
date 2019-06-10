@@ -8,7 +8,7 @@ f.first.max <- function(x) {
   if(length(x2) == 0){
     wm = NA
   } else {
-    wm <- which.min(x2)
+    wm <- which.max(x2)
     if(wm == 0) {
       wm = NA
     }
