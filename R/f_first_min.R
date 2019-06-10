@@ -9,9 +9,9 @@ f.first.min <- function(x) {
     wm = NA
   } else {
     wm <- which.min(x2)
-    if(wm == 0) {
-      wm = NA
-    }
+    #if(wm == 0) {
+    #  wm = NA
+    #}
   }
   
   return(wm)

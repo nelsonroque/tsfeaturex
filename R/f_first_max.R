@@ -9,9 +9,9 @@ f.first.max <- function(x) {
     wm = NA
   } else {
     wm <- which.max(x2)
-    if(wm == 0) {
-      wm = NA
-    }
+    #if(wm == 0) {
+    #  wm = NA
+    #}
   }
   
   return(wm)
