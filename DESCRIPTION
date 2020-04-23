@@ -1,5 +1,5 @@
 Package: tsfeaturex
-Version: 0.4.0
+Version: 0.4.1
 Date: 2019-05-20
 Title: An R Package for Automating Time Series Feature Extraction
 Authors@R: person("Nelson", "Roque", email = "nelsonroquejr@gmail.com", role = c("aut", "cre"))
